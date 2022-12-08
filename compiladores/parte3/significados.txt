@@ -1,0 +1,15 @@
+INPP - Inicio Programa Principal
+AMEM - Aloca Memória
+LEIA - Ler entrada
+ARZG - Armazena
+CRVG - Carrega Valor Global
+CRCT - Carrega Constante
+CMMA - Compara se Maior
+ESCR - Escreva
+DSVF - Desvio se Falso
+DSVS - Desvio Sempre
+NADA - Nada
+DMEM - Desaloca Memória
+FIMP - Fim Programa
+
+./simples < teste1.simples > teste1.mvs

@@ -1,0 +1,8 @@
+programa teste
+    inteiro a b c
+inicio
+    leia a
+    b <- a * 10
+    c <- a - 1
+    escreva b + c
+fimprograma

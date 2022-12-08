@@ -1,0 +1,20 @@
+	INPP
+	AMEM	x
+	LEIA
+	ARZG	x
+	LEIA
+	ARZG	x
+	CRVG	x
+	CRVG	x
+	CMMA
+	DSVF	Lx
+	CRVG	x
+	ESCR
+	DSVS	Ly
+Lx	NADA
+	CRVG	x
+	ESCR
+Ly	NADA
+	DMEM	x
+	FIMP
+Programa ok!

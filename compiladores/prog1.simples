@@ -1,0 +1,13 @@
+/*---------------------------------------
+  Programa exemplo em linguagem simples
+  -------------------------------------*/
+programa um
+    inteiro a b  // declaracao das variaveis
+inicio
+    leia a  // leitura de a
+    leia b  // leitura de b
+    enquanto a < b faca
+        escreva a
+        a <- a + 1
+    fimenquanto
+fimprograma    

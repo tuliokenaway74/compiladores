@@ -1,0 +1,19 @@
+	INPP
+	AMEM	x
+	LEIA
+	ARZG	x
+	CRVG	x
+	CRCT	k
+	MULT
+	ARZG	x
+	CRVG	x
+	CRCT	k
+	MENOS
+	ARZG	x
+	CRVG	x
+	CRVG	x
+	SOMA
+	ESCR
+	DMEM	x
+	FIMP
+Programa ok!

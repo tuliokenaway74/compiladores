@@ -1,0 +1,119 @@
+Grammar
+
+    0 $accept: comando $end
+
+    1 comando: expr ENTER
+    2        | %empty
+
+    3 expr: NUM
+    4     | expr MAIS expr
+    5     | expr MENOS expr
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    error (256)
+    NUM (258) 3
+    MAIS (259) 4
+    MENOS (260) 5
+    ENTER (261) 1
+
+
+Nonterminals, with rules where they appear
+
+    $accept (7)
+        on left: 0
+    comando (8)
+        on left: 1 2
+        on right: 0
+    expr (9)
+        on left: 3 4 5
+        on right: 1 4 5
+
+
+State 0
+
+    0 $accept: . comando $end
+
+    NUM  shift, and go to state 1
+
+    $default  reduce using rule 2 (comando)
+
+    comando  go to state 2
+    expr     go to state 3
+
+
+State 1
+
+    3 expr: NUM .
+
+    $default  reduce using rule 3 (expr)
+
+
+State 2
+
+    0 $accept: comando . $end
+
+    $end  shift, and go to state 4
+
+
+State 3
+
+    1 comando: expr . ENTER
+    4 expr: expr . MAIS expr
+    5     | expr . MENOS expr
+
+    MAIS   shift, and go to state 5
+    MENOS  shift, and go to state 6
+    ENTER  shift, and go to state 7
+
+
+State 4
+
+    0 $accept: comando $end .
+
+    $default  accept
+
+
+State 5
+
+    4 expr: expr MAIS . expr
+
+    NUM  shift, and go to state 1
+
+    expr  go to state 8
+
+
+State 6
+
+    5 expr: expr MENOS . expr
+
+    NUM  shift, and go to state 1
+
+    expr  go to state 9
+
+
+State 7
+
+    1 comando: expr ENTER .
+
+    $default  reduce using rule 1 (comando)
+
+
+State 8
+
+    4 expr: expr . MAIS expr
+    4     | expr MAIS expr .
+    5     | expr . MENOS expr
+
+    $default  reduce using rule 4 (expr)
+
+
+State 9
+
+    4 expr: expr . MAIS expr
+    5     | expr . MENOS expr
+    5     | expr MENOS expr .
+
+    $default  reduce using rule 5 (expr)
