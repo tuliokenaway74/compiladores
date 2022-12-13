@@ -1,19 +1,22 @@
 	INPP
-	AMEM	x
+	AMEM	3
 	LEIA
-	ARZG	x
-	CRVG	x
-	CRCT	k
+	ARZG	0
+	LEIA
+	ARZG	1
+	LEIA
+	ARZG	2
+	CRVG	0
+	CRCT	10
 	MULT
 	ARZG	x
-	CRVG	x
-	CRCT	k
-	MENOS
+	CRVG	0
+	CRCT	1
+	SUBT
 	ARZG	x
-	CRVG	x
-	CRVG	x
+	CRVG	1
+	CRVG	2
 	SOMA
 	ESCR
 	DMEM	x
 	FIMP
-Programa ok!
