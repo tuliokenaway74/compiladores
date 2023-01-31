@@ -1,0 +1,13 @@
+programa teste6
+    inteiro i j 
+inicio  
+    i <- 1 
+    enquanto i < 5 faca 
+        j <- 1 
+        enquanto j < 5 faca 
+            escreva i * j 
+            j <- j + 1 
+        fimenquanto 
+        i <- i + 1 
+    fimenquanto 
+fimprograma 

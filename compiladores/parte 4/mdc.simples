@@ -1,0 +1,13 @@
+programa mdc 
+    inteiro x y 
+inicio 
+    leia x 
+    leia y 
+    enquanto nao (x=y) faca 
+        se x > y 
+            entao x <- x - y
+            senao y <- y - x
+        fimse 
+    fimenquanto 
+    escreva x 
+fimprograma 

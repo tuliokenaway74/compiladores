@@ -1,0 +1,17 @@
+programa testatipos
+    inteiro a b c
+    logico x y z
+
+inicio
+    x <- F
+    a <- 10
+    se a > 1 entao 
+        escreva a 
+        senao escreva b 
+    fimse 
+    enquanto x faca 
+        escreva a 
+        a <- a > 1 
+        x <- a > 1 
+    fimenquanto 
+fimprograma

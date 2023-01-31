@@ -1,0 +1,12 @@
+programa teste7 
+    inteiro x y
+    logico a b c
+    inteiro z
+inicio  
+    leia x 
+    b <- nao V
+    enquanto x + 2 faca 
+        escreva x 
+        x <- x - 1 
+    fimenquanto 
+fimprograma 

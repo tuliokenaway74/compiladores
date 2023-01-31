@@ -1,0 +1,7 @@
+programa teste4
+    inteiro a b b
+inicio 
+    leia a 
+    leia b
+    escreva a * b 
+fimprograma

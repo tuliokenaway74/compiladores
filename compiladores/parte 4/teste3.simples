@@ -1,0 +1,9 @@
+programa teste3 
+    inteiro X 
+inicio 
+    X <- 20 
+    enquanto X > 10 faca 
+        escreva X 
+        X <- X - 1 
+    fimenquanto
+fimprograma 
